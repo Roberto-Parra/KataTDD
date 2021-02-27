@@ -9,4 +9,7 @@ class TestConjunto(unittest.TestCase):
         self.assertIsNone(conjunto.promedio())
     def test_conjunto_un_elemento(self):
         conjunto = Conjunto([5])
-        self.assertEqual(conjunto.promedio(),5)          
+        self.assertEqual(conjunto.promedio(),5)
+    def test_conjunto_dos_elemento(self):
+        conjunto = Conjunto([5,7])
+        self.assertEqual(conjunto.promedio(),6)               
