@@ -5,5 +5,5 @@ class TestConjunto(unittest.TestCase):
 
     def test_conjunto_vacio(self):
         conjunto = Conjunto({})
-        #check caso vacio
+        #check caso vacios
         self.assertIsNone(conjunto.promedio())
