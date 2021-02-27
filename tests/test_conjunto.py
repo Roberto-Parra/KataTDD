@@ -7,3 +7,6 @@ class TestConjunto(unittest.TestCase):
         conjunto = Conjunto({})
         #check caso vacios
         self.assertIsNone(conjunto.promedio())
+    def test_conjunto_un_elemento(self):
+        conjunto = Conjunto({5})
+        self.assertEqual(conjunto.promedio(),5)          
